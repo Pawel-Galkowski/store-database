@@ -80,6 +80,6 @@ app.put("/dishes/:id", (req, res) => {
     res.status(200).send('comment added')
 });
 
-app.listen(8080 || process.env.PORT);
+app.listen(process.env.PORT || 8080);
 
 module.exports = router;
